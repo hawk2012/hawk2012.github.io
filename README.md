@@ -1,4 +1,3 @@
-# Gubin Systems
 ---
 layout: default
 title: Gubin Systems

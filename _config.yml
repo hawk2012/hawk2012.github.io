@@ -1,0 +1,12 @@
+title: Gubin Systems
+email: platform@gubin.systems
+description: Информация - это ключ, открывающий двери к миру знаний и возможностей.
+baseurl: "/" # the subpath of your site, e.g. /blog
+permalink: /blog/:title/
+paginate: 10  # Количество постов на одной странице
+paginate_path: "/blog/page:num/"  # Путь к страницам пагинации
+url: "https://gubin.systems" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  hawk2012
+safe: false
+plugins:
+  - jekyll-paginate

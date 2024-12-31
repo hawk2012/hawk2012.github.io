@@ -1,0 +1,32 @@
+---
+layout: default
+title: Блог
+description: "Мой блог, здесь я делюсь мыслями и публикую интересные посты обо всем на свете!"
+pagination:
+  enabled: true
+  per_page: 10 # Количество постов на одной странице
+  trail:
+    before: 2
+    after: 2
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+    <article class="post">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+      {{ post.excerpt }}
+      <p><a href="{{ post.url }}">Читать далее</a></p>
+    </article>
+  {% endfor %}
+</div>
+
+<!-- Пагинация -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">Предыдущая страница</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="next">Следующая страница</a>
+  {% endif %}
+</div>

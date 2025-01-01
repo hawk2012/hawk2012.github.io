@@ -1,6 +1,6 @@
 ---
 layout: default
-title: «СФО Оптимум Финанс». Коллекторы или новые начала?
+title: СФО Оптимум Финанс. Коллекторы или новые начала?
 permalink: /optimum-finans-kollektory/
 ---
 

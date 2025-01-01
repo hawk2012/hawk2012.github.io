@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Заголовок
+title: Жженая карамель. Сладость из детства
 permalink: /{{ page.file | replace_first: '.md', '' }}/
 ---
 

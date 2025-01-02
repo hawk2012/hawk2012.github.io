@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Заголовок
+title: Разрядка аккумулятора от мороза. Почему такое происходит
 permalink: /razryadka-akb-zimoy/
 ---
 

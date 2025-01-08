@@ -21,6 +21,20 @@ pagination:
     </article>
   {% endfor %}
 
+</div>
+
+
+
+<!-- Пагинация -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">Предыдущая страница</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="next">Следующая страница</a>
+  {% endif %}
+</div>
+
 {% if page.comments %}
 <script id="dsq-count-scr" src="//gubinsystems.disqus.com/count.js" async></script>
 <div id="disqus_thread"></div>
@@ -43,16 +57,3 @@ pagination:
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% endif %}
-</div>
-
-
-
-<!-- Пагинация -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">Предыдущая страница</a>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}" class="next">Следующая страница</a>
-  {% endif %}
-</div>

@@ -6,9 +6,9 @@ permalink: /tls-handshake-failed/
 
 Симптомы:
 
-В логах приложения на linux: `A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 31 - Encryption(ssl/tls) handshake failed)`.
+В логах приложения на Linux: `A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: SSL Provider, error: 31 - Encryption(ssl/tls) handshake failed)`.
 
-В логах Windows server 2012: `An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The SSL connection request has failed`.
+В логах Windows Server 2012: `An TLS 1.2 connection request was received from a remote client application, but none of the cipher suites supported by the client application are supported by the server. The SSL connection request has failed`.
 
 Ошибка, которую вы видите, связана с тем, что клиентское приложение пытается установить соединение с использованием протокола TLS 1.2, но сервер не поддерживает ни одного из шифров, предложенных клиентом. Это может произойти из-за того, что Windows Server 2012 использует устаревшие алгоритмы шифрования, которые больше не поддерживаются современными клиентами.
 

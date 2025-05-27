@@ -1,4 +1,4 @@
-[ГЛАВНАЯ](README.md) | [ОТВЕТЫ](DEVOPS_QA.md)
+[ГЛАВНАЯ](README.md) | [ОТВЕТЫ](DEVOPS_QA.md) | [KUBERNETES](KUBERNETES.md)
 
 ## 🔧 Общие вопросы
 
